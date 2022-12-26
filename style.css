@@ -28,7 +28,7 @@
   src: url(./fonts/PlayfairDisplay-Bold.ttf) format(truetype);
   font-weight: 700;
 }
-.preview, header nav, header {
+footer .column, footer, .travel, .preview, header nav, header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,4 +173,85 @@ header .img-logo {
   height: 483px;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.travel {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+.travel .img-travel {
+  background-image: url(./assests/Thousand-2.svg);
+  width: 659px;
+  height: 534px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.travel .text {
+  width: 450px;
+  margin-left: 66px;
+}
+.travel .text h1 {
+  font: 700 36px "Playfair Display";
+  color: #000000;
+}
+.travel .text p {
+  font: 300 17px "Inter";
+  color: #7D7987;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.travel .text .btn {
+  background: #FB8F1D;
+  border-radius: 8px;
+  width: 164px;
+  text-align: center;
+  padding: 15px 0;
+  font: 600 16px "Inter";
+  color: #ffffff;
+}
+
+footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 280px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .info {
+  width: 391px;
+  color: #848484;
+}
+footer .info .img-logo {
+  background-image: url(./assests/footer-logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 37px;
+}
+footer .info p {
+  width: 351px;
+  font: 300 18px "Inter";
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+footer .column {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 820px;
+}
+footer .column div h3 {
+  font: 700 19px "Inter";
+  color: #000000;
+  margin-bottom: 20px;
+}
+footer .column div p {
+  width: 351px;
+  font: 300 18px "Inter";
+  margin-bottom: 8px;
+  color: #848484;
 }

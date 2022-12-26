@@ -38,6 +38,9 @@ $white-color: #ffffff;
 $orange-color: #FB8F1D;
 $grey-color: #B8BECD;
 $black-color: #202336;
+$bblack-color: #000000;
+$ggrey-color: #7D7987;
+$fotgrey: #848484;
 $darkgrey-color: #4A4C53;
 
 %flexspb {
@@ -130,7 +133,7 @@ header {
 
         p {
             font: 600 22px 'Inter';
-            color:$black-color;
+            color: $black-color;
             margin: 50px 0;
         }
 
@@ -180,4 +183,91 @@ header {
         background-repeat: no-repeat;
     }
 
+}
+
+.travel {
+    @extend %flexspb;
+    align-items: center;
+    margin-top: 100px;
+
+    .img-travel {
+        background-image: url(./assests/Thousand-2.svg);
+        width: 659px;
+        height: 534px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .text {
+        width: 450px;
+        margin-left: 66px;
+
+        h1 {
+            font: 700 36px 'Playfair Display';
+            color: $bblack-color;
+        }
+
+        p {
+            font: 300 17px 'Inter';
+            color: $ggrey-color;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            background: $orange-color;
+            border-radius: 8px;
+            width: 164px;
+            text-align: center;
+            padding: 15px 0;
+            font: 600 16px 'Inter';
+            color: $white-color;
+        }
+    }
+}
+
+footer {
+    @extend %flexspb;
+    align-items: center;
+    margin-top: 280px;
+    justify-content: space-between;
+
+    .info {
+        width: 391px;
+        color: $fotgrey;
+
+        .img-logo {
+            background-image: url(./assests/footer-logo.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 44px;
+            height: 37px;
+        }
+
+        p {
+            width: 351px;
+            font: 300 18px 'Inter';
+            margin-top: 20px;
+            margin-bottom: 45px;
+        }
+    }
+
+    .column {
+        @extend %flexspb;
+        justify-content: space-between;
+        width: 820px;
+
+        div h3 {
+            font: 700 19px 'Inter';
+            color: $bblack-color;
+            margin-bottom: 20px;
+        }
+
+        div p {
+            width: 351px;
+            font: 300 18px 'Inter';
+            margin-bottom: 8px;
+            color: $fotgrey;
+        }
+    }
 }
